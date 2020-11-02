@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EMI Calculator</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+	<link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+</head>
+<body>
+<form id="form" class='container jumbotron'>
+  <h2><center>EMI Calculator</center></h2>
+  <div class="form-group" >
+    <label for="principal">Principal</label>
+    <input type="number" class="form-control" placeholder="Enter principal" name="principal">
+  </div>
+
+ <div class="form-group" >
+    <label for="rate">Rate</label>
+    <input type="number" class="form-control" placeholder="Enter rate per annum" name="rate">
+  </div>
+  <div class="form-group" >
+    <label for="tenure">Tenure</label>
+    <input type="number" class="form-control" placeholder="Enter tenure in months" name="tenure">
+  </div>
+
+
+  <button id="submit" class="btn btn-primary">Submit</button>
+</form>
+<div style="font-family: 'Itim', cursive;" class="container jumbotron">
+	<h4>Loan EMI</h4>
+	<p id="emi"></p>
+
+	<h4>Total Interest</h4>
+	<p id="interest"></p>
+
+	<h4>Total Payable Amount</h4>
+	<p id="amount"></p>
+</div>
+	
+
+</body>
+<script type="text/javascript" src="script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</html>
